@@ -1,0 +1,85 @@
+._container {
+    max-width: 650px;
+    padding: 0px 15px;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+
+.input1 {
+    padding: 10px 12px;
+    color: #5d5d5d;
+    background-clip: padding-box;
+    /*border: 1px solid #bdbdbd;*/
+    border: none;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    transition: box-shadow 0.15s ease-in-out;
+}
+.input1::placeholder {
+    color: #212529;
+    opacity: 0.4;
+}
+.input1:focus {
+    color: #212529;
+    background-color: #F2F2F2;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.05rem rgba(158, 158, 158, 0.25);
+}
+
+.output {
+    border: 1px solid #5DB8BB;
+    /*overflow-y: scroll; для полоски скролла*/
+    /*height: 300px;*/
+    min-height: 300px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+
+.output__message {
+    background-color: #DDF2F4;
+    max-width: 70%;
+    width: fit-content;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 13px;
+    border-bottom-right-radius: 0;
+    padding: 8px 12px;
+}
+
+.output__message-anv {
+    overflow-wrap: break-word;
+    border: none;
+    /*border-color: none;*/
+    background-color: #f3f3f3;
+    max-width: 70%;
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 13px;
+    border-bottom-left-radius: 0;
+    padding: 8px 12px;
+}
+
+.send-form__btn {
+    color: white;
+    border-radius: 15px;
+    background: #2BBDBC;
+    border: none;
+    cursor: pointer;
+    box-shadow: none;
+    padding: 10px 12px;
+}
+
+.send-form__btn:hover {
+    box-shadow: 0px 2px 8px 2px rgba(141,150,178,.3);
+    transform: scale(1.02);
+}
+
+.send-form{
+    display: flex;
+    justify-content: space-between;
+    max-height: 36px;
+}
