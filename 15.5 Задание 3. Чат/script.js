@@ -2,18 +2,6 @@ const wsUrl = 'wss://echo-ws-service.herokuapp.com'
 
 const output = document.querySelector('.output')
 
-function getLastElement(selector) {
-    const elements = Array.from(document.querySelectorAll('.' + selector))
-    // const i = elements.length - 1
-    if (elements.length === 0) {
-        return 'element not found'
-    } else {
-        // return elements[i]
-        return elements.at(-1)
-    }
-}
-console.log(getLastElement('output'))
-//--------------------------------------------------
 
 const btnOpen = document.querySelector('.btn--open')
 const btnClose = document.querySelector('.btn--close')
