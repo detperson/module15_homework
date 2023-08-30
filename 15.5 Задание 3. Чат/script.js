@@ -45,11 +45,21 @@ btnClose.addEventListener('click', () => {
     websocket = null
 })
 
-btnSend.addEventListener('click', () => {
+function sendMessage() {
     const mes = inp.value
     writeToScreen('<p class="output__message">Я: ' + mes + '</p>')
     websocket.send(mes)
     inp.value = ""
+}
+
+btnSend.addEventListener('click', () => {
+    sendMessage()
+})
+
+inp.addEventListener('keydown', (evt) => {
+    if (evt.code === 'Enter') {
+        sendMessage()
+    }
 })
 
 // Определение геопозиции
